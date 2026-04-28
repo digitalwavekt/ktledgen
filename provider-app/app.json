@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "KT Interior",
+    "slug": "kt-interior-provider",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#020814"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ktinterior.provider",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access for capturing completed work",
+        "NSPhotoLibraryUsageDescription": "Access photos for portfolio uploads",
+        "NSMicrophoneUsageDescription": "Microphone for video recording"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#020814"
+      },
+      "package": "com.ktinterior.provider",
+      "permissions": ["CAMERA","READ_EXTERNAL_STORAGE","WRITE_EXTERNAL_STORAGE","RECORD_AUDIO"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      ["expo-notifications", {
+        "icon": "./assets/notification-icon.png",
+        "color": "#00d4ff"
+      }]
+    ],
+    "scheme": "ktinterior",
+    "extra": {
+      "apiUrl":    "https://personalportfoliowebsite2026.onrender.com",
+      "eas": { "projectId": "your-eas-project-id" }
+    }
+  }
+}
